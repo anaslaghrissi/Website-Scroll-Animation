@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.logo {
+  width: 150px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  position: fixed;
+  z-index: 1000;
+  color: #000;
+  box-shadow: 0 0 25px #b4b4b4;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+  cursor: pointer;
+}
+.menu li {
+  font-weight: 500;
+  transition: 0.5s;
+}
+.menu li:hover {
+  color: sienna;
+}
+.nav-language {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+.layer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(81, 46, 22);
+}
+.layer::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  width: 80px;
+  height: 200px;
+  background: rgb(81, 46, 22);
+  box-shadow: 0 calc(90vh - 100px) 0 rgb(81, 46, 22);
+}
+.layer .plane {
+  position: absolute;
+  height: 100vh;
+  rotate: 90deg;
+  left: -50vh;
+  filter: drop-shadow(0 0 25px #000);
+}
+.layer .mr-map {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 800px;
+  filter: drop-shadow(0 0 10px #fff);
+}
+section {
+  height: 200vh;
+  background-image: url(../images/casablanca.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.sec2 {
+  height: 30vh;
+  background-image: url(../images/R.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.text {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: saddlebrown;
+}
+.text h2 {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  line-height: 2.5em;
+}
+.text span {
+  font-weight: 800;
+  font-size: 9rem;
+  letter-spacing: 0.25rem;
+  background: url(../images/R.jpeg);
+  background-clip: text;
+  background-size: cover;
+  color: transparent;
+  background-attachment: fixed;
+}
+.container {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.place-to-go {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.row {
+  text-align: center;
+  border: 1px solid #f8f6f6;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #b4b4b4;
+  overflow: hidden;
+}
+.row img {
+  border-radius-top: 20px;
+  width: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.row img:hover {
+  transform: scale(1.1);
+}
+.row h3 {
+  padding: 15px;
+}
+
+.btn-more {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 0 25px #b4b4b4;
+  transform: translate(380%, 50%);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-more:hover {
+  background: #fff;
+  color: sienna;
+}
+.row-food {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.row-food .text-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.row-food .img-col {
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+.row-food .img-col img {
+  display: block;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+}
+hr {
+  border: 3px solid saddlebrown;
+  border-radius: 5px;
+  width: 30%;
+  margin: 20px auto 0;
+  filter: drop-shadow(0 0 25px #b4b4b4);
+}
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+.newsletter__bg {
+  background: #6448023f;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  row-gap: 2.5rem;
+  width: 60%;
+  box-shadow: 0 0 20px #b4b4b4, 0 0 50px #b4b4b4;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.newsletter__title {
+  font-size: 20px;
+  color: hsl(0, 0%, 15%);
+  margin-bottom: 10px;
+}
+.newsletter__description {
+  color: hsl(0, 0%, 35%);
+  font-size: 14px;
+}
+.newsletter__subscribe {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+  margin: 20px 0;
+}
+.newsletter__input {
+  border: 0;
+  outline: 0;
+  background: hsl(0, 0%, 94%);
+  padding: 1.25rem 1rem;
+  color: hsl(0, 0%, 15%);
+  box-shadow: 0 0 15px #000000a0;
+  border-radius: 5px;
+}
+.newsletter .button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter .button a {
+  text-decoration: none;
+  background: rgba(160, 81, 45, 0.763);
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 30px;
+  background: #cdcbcb;
+  box-shadow: 0 0 25px #b4b4b4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.social-icon {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+i {
+  font-size: 30px;
+  transition: 0.5s;
+  color: rgb(98, 32, 2);
+}
+.social-icon i:hover {
+  transform: translateY(-10px);
+}
+footer .fa-crown {
+  color: yellow;
+  font-size: 15px;
+}
+footer p {
+  font-weight: 500;
+}
+footer span {
+  font-weight: 200;
+}
